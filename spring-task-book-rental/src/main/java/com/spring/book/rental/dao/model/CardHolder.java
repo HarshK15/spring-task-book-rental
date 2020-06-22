@@ -13,9 +13,7 @@ import javax.persistence.Table;
 public class CardHolder {
 
 	@Id
-	@GeneratedValue(generator="SEQ_CARD_HOLDER_ID",strategy=GenerationType.IDENTITY)
-    @SequenceGenerator(name="SEQ_CARD_HOLDER_ID",
-    sequenceName="SEQ_PG_CARD_HOLDER_ID",initialValue = 1)
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column
 	public int id;
 

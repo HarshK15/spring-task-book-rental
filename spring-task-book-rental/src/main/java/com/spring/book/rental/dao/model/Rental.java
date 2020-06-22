@@ -1,23 +1,19 @@
 package com.spring.book.rental.dao.model;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
-
-
-@EntityScan
+@Entity
 @Table(name = "Rental")
 public class Rental {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "rental_id")
-	@SequenceGenerator(name = "SEQ_PG_CARD_HOLDER_ID", sequenceName = "SEQ_PG_CARD_HOLDER_ID", allocationSize = 1)
-	@GeneratedValue(generator = "SEQ_PG_CARD_HOLDER_ID")
 	public int rentalId;
 
 	@Column(name = "cardHolder_id")

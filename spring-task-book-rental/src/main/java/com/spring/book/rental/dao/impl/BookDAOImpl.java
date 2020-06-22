@@ -3,11 +3,9 @@ package com.spring.book.rental.dao.impl;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.spring.book.rental.DTO.BookDTO;
 import com.spring.book.rental.dao.BookDAO;
 import com.spring.book.rental.dao.model.Book;
 import com.spring.book.rental.dao.repository.BookRepository;

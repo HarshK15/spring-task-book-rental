@@ -29,7 +29,6 @@ public class BookController {
 			bookService.rentBook(bookRequest);
 			return "You rented a Book Id : "+bookRequest.getBookId();
 		} catch (Exception e) {
-			e.printStackTrace();
 			return e.getMessage();
 		}
 	}

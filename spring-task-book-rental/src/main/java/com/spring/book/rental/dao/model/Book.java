@@ -1,10 +1,10 @@
 package com.spring.book.rental.dao.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Column;
 
 @Entity
 @Table(name = "BOOK")
@@ -17,7 +17,7 @@ public class Book {
 	@Column
 	public String title;
 
-	@Column(value = "IS_BOOK_AVAILABLE")
+	@Column(name = "IS_BOOK_AVAILABLE")
 	public boolean isBookAvailable;
 
 	@Column
